@@ -10,14 +10,14 @@ This application has been build using react Js to load the static json data. Ini
 
 ## Demo
 
-![Demo](/src/assets/demo.gif)
+![Demo](/src/assets/Demo.gif)
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/tapesh02/nitro.git
 ```
 
 Go to the project directory
