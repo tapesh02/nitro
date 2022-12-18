@@ -1,0 +1,154 @@
+.formBg {
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    .mainForm {
+        width: 80%;
+        height: 70vh;
+        margin: auto;
+        padding: 1rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-image: linear-gradient(to bottom, #f9d8d8, #fcd0d5, #fec8d5, #fdc0d7, #fbb9db);
+        padding-bottom: 2rem;
+        z-index: 5;
+
+        .fromHeader {
+            color: rgb(230, 13, 49);
+            font-size: 1.5rem;
+            padding: 1em;
+            width: fit-content;
+            hr {
+                height: 2px;
+                background-color: rgb(230, 13, 49);
+                border: none;
+            }
+        }
+
+        .fromSection {
+            width: 100%;
+            margin: auto;
+            height: 50%;
+
+            .authorInputMain,
+            .locationInputMain,
+            .mainBtns {
+                display: flex;
+                flex-direction: column;
+                width: 43rem;
+                height: 27%;
+                justify-content: center;
+                align-items: flex-start;
+                margin: auto;
+                margin-bottom: 1vh;
+
+                label {
+                    font-size: 1rem;
+                    height: 25%;
+                    font-weight: 600;
+                    color: rgb(230, 13, 49);
+                    padding: 0.5rem;
+                    letter-spacing: 0.02rem;
+                }
+                input {
+                    padding: 0.5rem;
+                    margin: 0.2rem 0;
+                    width: 70%;
+                    height: 3rem;
+                    font-size: 1rem;
+                    letter-spacing: 0.02rem;
+                    color: rgb(77, 77, 77);
+                    cursor: text;
+                    border: 1.5px solid rgb(250, 220, 225);
+                    border-radius: 5px;
+                    box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+                    transition: 0.1s ease-in;
+                    box-sizing: border-box;
+
+                    &:focus,
+                    :focus-within {
+                        outline: 1px solid rgb(230, 13, 49);
+                        border: none;
+                    }
+                    &::placeholder {
+                        color: rgb(230, 13, 49);
+                    }
+                }
+            }
+
+            .mainBtns {
+                height: 15%;
+                margin-top: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                align-content: center;
+
+                .innerBtns {
+                    display: flex;
+                    gap: 1rem;
+
+                    button {
+                        color: white;
+                        border: none;
+                        width: 6.5rem;
+                        height: 30px;
+                        margin-bottom: 0.5rem;
+                        background-image: linear-gradient(to bottom, #ff0000, #ff0031, #ff0050, #f8006b, #eb1283);
+                        font: 1.2rem bold;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: 0.5s all;
+
+                        &:hover {
+                            color: #ff0000;
+                            background: inherit;
+                            border: 1px solid #ff0000;
+                        }
+
+                        &:focus {
+                            color: #ff0000;
+                            background: inherit;
+                            border: 1px solid #ff0000;
+                        }
+
+                        &:active {
+                            color: #ff0000;
+                            background: inherit;
+                            border: 1px solid #ff0000;
+                        }
+                    }
+                    .updateBtn {
+                        background-color: #e28743;
+
+                        &:hover {
+                            color: #ff0000;
+                            background: inherit;
+                            border: 1px solid #ff0000;
+                        }
+
+                        &:focus {
+                            color: #ff0000;
+                            background: inherit;
+                            border: 1px solid #ff0000;
+                        }
+
+                        &:active {
+                            color: #f77fdd;
+                            background: inherit;
+                            border: 1px solid #ff0000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
