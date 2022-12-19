@@ -46,4 +46,17 @@ describe("Home Component", () => {
         const inputEl = screen.getByRole("button", { name: /group by/i });
         expect(inputEl).toHaveTextContent("All");
     });
+
 });
+
+describe("author component", () => {
+    it("should render author component ", () => {
+        render(<AuthorsGroup posts={posts} />);
+    });
+});
+describe("location component", () => {
+    it("should render location component ", () => {
+        render(<LocationsGroup posts={posts} />);
+    });
+});
+
