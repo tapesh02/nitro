@@ -26,7 +26,14 @@ Go to the project directory
   cd nitro
 ```
 
-Install dependencies
+Installation
+
+If you have not installed the create-react-app please install else skil to next. 
+
+```bash
+  npm i create-react-app
+```
+Install all packages and dependencies 
 
 ```bash
   npm install
