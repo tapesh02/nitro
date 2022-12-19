@@ -3,6 +3,14 @@ import { getByRole, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 import Home from "../Home";
+import AuthorsGroup from "../../components/AuthorsGroup/AuthorsGroup";
+import LocationsGroup from "../../components/LocationGroup/LocationGroup";
+
+const posts = [
+    { id: "1", location: "San Francisco", text: "test1", author: "Happy Developer", time: "1552571174" },
+    { id: "2", location: "New York", text: "test1", author: "Happy Developer", time: "1552571174" },
+];
+
 
 describe("Home Component", () => {
     it("should have a 'group by' label text for select dropdown ", () => {
