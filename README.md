@@ -28,13 +28,6 @@ Go to the project directory
 
 Installation
 
-If you have not installed the create-react-app please install else skip to next. 
-
-```bash
-  npm i create-react-app
-```
-Install all packages and dependencies 
-
 ```bash
   npm install
 ```
@@ -44,6 +37,7 @@ Start the server
 ```bash
   npm run start
 ```
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -57,4 +51,24 @@ To run tests, run the following command
 
 ```bash
   npm run test
+```
+## Optional commands to troubleshoot in only certain cases
+
+If you run into issue please run following addition commands before npm install. 
+
+
+```bash
+  rm -rf node_modules
+```
+
+```bash
+  npm cache clean ---force
+```
+
+```bash
+  npm i create-react-app
+```
+
+```bash
+  npm i react-scripts
 ```
